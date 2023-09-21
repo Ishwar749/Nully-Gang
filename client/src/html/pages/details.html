@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Quote</title>
+    <link rel="stylesheet" href="../../css/details.css" />
+  </head>
+  <body>
+    <h2 class="new-quote-header">Details</h2>
+    <form id="detailsForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" required />
+
+      <label for="age">Age</label>
+      <input type="text" id="age" required />
+
+      <label for="gender">Gender</label>
+      <input type="text" id="gender" required />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" required />
+
+      <label for="phoneno">Phone Number</label>
+      <input type="text" id="phoneno" required />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" required />
+
+      <label for="pan">PAN Card Number</label>
+      <input type="text" id="pan" required />
+
+      <div class="form-radio">
+        <p>Account Type</p>
+        <input type="radio" id="savings" name="account-type" value="Savings">
+        <label for="savings">Savings</label>
+        <input type="radio" id="current" name="account-type" value="Current">
+        <label for="current">Current</label>
+      </div>
+
+      <input
+        id="quote-submit-button"
+        type="submit"
+        value="Submit Details"
+        onclick="redirectToHOme()"
+      />
+    </form>
+
+    <script src="../../js/employee-new-quote.js"></script>
+
+    <script>
+      function redirectToHome() {
+        window.location.href = "../pages/home.html";
+      }
+    </script>
+  </body>
+</html>
